@@ -21,7 +21,7 @@ namespace ejercicios
                 Console.WriteLine($"La suma de {num} con return es {res}.");
 
                 tri(num);
-                esp(num);
+                esp(num+1);
             }
             else
                 Console.WriteLine("Número inválido.");
