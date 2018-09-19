@@ -142,7 +142,6 @@ namespace ejercicios
                     Console.Write(arre[i, j]);
                 }
                 Console.WriteLine();
-                Console.WriteLine("hola esta es una modificacion 2");
             }
         }
     }
