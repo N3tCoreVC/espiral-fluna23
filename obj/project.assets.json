@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\curso\\ejercicios\\ejercicios.csproj",
+      "projectUniqueName": "C:\\curso\\curso\\espiral-fluna23\\ejercicios.csproj",
       "projectName": "ejercicios",
-      "projectPath": "C:\\curso\\ejercicios\\ejercicios.csproj",
+      "projectPath": "C:\\curso\\curso\\espiral-fluna23\\ejercicios.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\curso\\ejercicios\\obj\\",
+      "outputPath": "C:\\curso\\curso\\espiral-fluna23\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

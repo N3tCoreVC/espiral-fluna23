@@ -4,73 +4,17 @@ namespace ejercicios
 {
     class Program
     {
-        static int num, resu = 0;
+        static int num;
         static void Main(string[] args)
         {
-            int res = 1;
-            Console.WriteLine("Dame número: ");
+            Console.WriteLine("Dame número para espiral: ");
 
             if (int.TryParse(Console.ReadLine(), out num))
             {
-                for (int i = 1; i <= num; i++)
-                    res = res * i;
-                Console.WriteLine($"El factorial de {num} es {res}.");
-                sumaR(1);
-
-                res = suma(num);
-                Console.WriteLine($"La suma de {num} con return es {res}.");
-
-                tri(num);
                 esp(num+1);
             }
             else
                 Console.WriteLine("Número inválido.");
-        }
-
-        static int suma(int nume)
-        {
-            int resl = 0;
-            for (int i = 1; i <= nume; i++)
-            {
-                if (i % 2 == 0)
-                    resl = resl + i;
-            }
-            return resl;
-        }
-
-        static void sumaR(int nume)
-        {
-            if (nume <= num)
-            {
-                if (nume % 2 == 0)
-                    resu = resu + nume;
-                sumaR(nume + 1);
-            }
-            else
-            {
-                Console.WriteLine($"La suma de {num} es {resu}.");
-            }
-        }
-
-        static void tri(int val)
-        {
-            String cade = "";
-            int lim = val, aux = 1;
-            for (int i = 0; i < val; i++)
-            {
-                for (int j = 0; j < lim; j++)
-                {
-                    cade += " ";
-                }
-                for (int j = 0; j < aux; j++)
-                {
-                    cade += "1 ";
-                }
-                Console.WriteLine($"{cade}");
-                cade = "";
-                aux++;
-                lim--;
-            }
         }
 
         static void esp(int val)
