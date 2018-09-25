@@ -20,12 +20,12 @@ namespace ejercicios
         static void esp(int val)
         {
             String[,] arre = new String[val, val];
-            int dir = 3, o = val, fija = 0, pos = 0, aux = 0;
+            int dir = 3, o = val, fija = 0, pos = 0, aux = 0, num = 11;
             for (int i = 0; i < val; i++)
             {
                 for (int j = 0; j < val; j++)
                 {
-                    arre[i, j] = " ";
+                    arre[i, j] = "    ";
 
                 }
             }
@@ -35,7 +35,8 @@ namespace ejercicios
                 {
                     for (int j = pos; j < o; j++)
                     {
-                        arre[fija, j] = "|";
+                        arre[fija, j] = "  "+num;
+                        num++;
                         aux = j;
                     }
                     pos = fija + 1;
@@ -48,7 +49,8 @@ namespace ejercicios
                 {
                     for (int j = pos; j < o; j++)
                     {
-                        arre[j, fija] = "|";
+                        arre[j, fija] = "  "+num;
+                        num++;
                         aux = j;
                     }
                     pos = fija;
@@ -58,10 +60,13 @@ namespace ejercicios
                 }
                 else if (dir == 3)
                 {
-                    for (int j = val - o; j < pos; j++)
+                    //for (int j = val - o; j < pos; j++)
+                    for (int j = pos - 1; j >= val - o; j--)
                     {
-                        arre[fija, j] = "|";
-                        aux = j;
+                        arre[fija, j] = "  "+num;
+                        num++;
+                        //aux = j;
+                        aux = pos;
                     }
                     pos = fija;
                     fija = val - o;
@@ -69,10 +74,13 @@ namespace ejercicios
                 }
                 else if (dir == 4)
                 {
-                    for (int j = val - o; j < pos; j++)
+                    //for (int j = val - o; j < pos; j++)
+                    for (int j = pos - 1; j >= val - o; j--)
                     {
-                        arre[j, fija] = "|";
-                        aux = j;
+                        arre[j, fija] = "  "+num;
+                        num++;
+                        //aux = j;
+                        aux = pos;
                     }
                     pos = fija + 1;
                     fija = val - o;
